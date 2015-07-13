@@ -12,7 +12,8 @@
     "jshint": "^2.8.0"
   },
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "dist": "rm -r ./dist & mkdir ./dist && mkdir ./dist/bin"
   },
   "repository": {
     "type": "git",

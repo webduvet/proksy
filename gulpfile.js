@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var jshint = require('gulp-jshint');
+var fs = require('fs');
 
 
 gulp.task('default', function() {
@@ -12,7 +13,15 @@ gulp.task('lint', function() {
     .pipe(jshint.reporter('YOUR_REPORTER_HERE'));
 });
 
-gulp.task('bin', function() {
+gulp.task('dist', function() {
+  fs.exists('./dist', function(res){
+    if (res) {
+      fs.rmdirSync('./dist');
+    }
+    fs.mkdirSync('./dist');
+    fs.mkdirSync('./dist/bin');
+
+  })
 });
 
 
