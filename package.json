@@ -22,7 +22,7 @@
     "proxy"
   ],
   "author": "andrej bartko",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/webduvet/proksy/issues"
   },
