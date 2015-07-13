@@ -1,0 +1,28 @@
+{
+  "name": "proksy",
+  "version": "0.0.1",
+  "description": "sinple proxy serer",
+  "main": "index.js",
+  "dependencies": {
+    "rsvp": "^3.0.18"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webduvet/proksy.git"
+  },
+  "keywords": [
+    "proxy"
+  ],
+  "author": "andrej bartko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/webduvet/proksy/issues"
+  },
+  "homepage": "https://github.com/webduvet/proksy#readme"
+}
