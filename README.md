@@ -31,4 +31,28 @@ build script creates .bin directory in modules
 start and build script could be the same with different params
 however it better to split as the functionality is different
 
+dir structure
+
+
+bin
+  start
+initializers
+core
+actions
+
+nodeModules
+  proksy
+    bin
+      scripts
+    nodeModules
+    config
+      default_config
+    templates
+    core
+    initializers
+    actions
+
+
+      
+
 
