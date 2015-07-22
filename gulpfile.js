@@ -1,6 +1,8 @@
-var gulp = require('gulp');
-var jshint = require('gulp-jshint');
-var fs = require('fs');
+var gulp = require('gulp'),
+  jshint = require('gulp-jshint'),
+  fs = require('fs'),
+  babel = require('gulp-babel')
+  ;
 
 
 gulp.task('default', function() {
@@ -22,6 +24,12 @@ gulp.task('dist', function() {
     fs.mkdirSync('./dist/bin');
 
   })
+});
+
+gulp.task('comp', function(){
+  return gulp.src('src/app.js')
+    .pipe(babel())
+    .pipe(gulp.dest('dist'));
 });
 
 
